@@ -2,15 +2,15 @@
     background-color: rgb(74, 115, 176);
 }
 
-main {
-    background-color: rgb(160, 196, 201);
-    text-align: center;
-    width: 600px;
-}
-
 body {
+    font-family: 'Fira Sans', sans-serif;
     display: flex;
     position: relative;
+    background-color: rgb(187, 203, 205);
+    text-align: center;
+    width: 600px;
+    margin: 300px;
+    margin-left: 450px;
 }    
 
 input, select {
@@ -23,7 +23,12 @@ input, select {
 button {
     padding: 4px;
     color: white;
-    background-color: rgb(52, 161, 136);
+    background-color: rgb(195, 162, 31);
     border-radius: 5px;
     width: 580px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
 }

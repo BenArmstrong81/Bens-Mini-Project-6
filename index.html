@@ -5,45 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben's Mini Project 6</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/normalize.css"/>
+    <link rel="stylesheet" href="./assets/style.css"/>
 </head>
+
 <body>
-    <main class="flex-row justify-center align-center col-auto">
-        <h1 class="header1">Library of Congress Search Engine</h1>
-    <!-- Form from Bootstrap -->
-    <form class="form-horizontal">
-        <div class="form-group">
-          <label for="inputEmail3" class="col-sm-2 control-label"></label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Search!">
-          </div>
-        </div>
-        <div class="form-group">
-            <!-- Drop down box -->
-          <label for="inputPassword3" class="col-sm-2 control-label"></label>
-          <select class="form-control" placeholder="Select a format...">
-            <option>Maps</option>
-            <option>Audio Recordings</option>
-            <option>Photo, Print, Drawing</option>
-            <option>Manuscripts</option>
-            <option>Newspapers</option>
-            <option>Videos</option>
-            <option>Printed Music, such as Sheet Music</option>
-            <option>Archived Websites</option>
-          </select>
-         
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Click Me</button>
-          </div>
-        </div>
+  <div class="flex-row align-center justify-center min-100-vh bg-primary">
+    <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
+      <h1 class="text-primary">Library of Congress Search Engine</h1>
+      <!-- FORM from Bootstrap -->
+      <form id="search-form" class="form w-100">
+        <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
+        <!-- Drop Down Box -->
+        <select id="format-input" class="form-input w-100">
+          <option value="" disabled selected>Select a format...</option>
+          <option value="maps">Maps</option>
+          <option value="audio">Audio</option>
+          <option value="photos">Photos</option>
+          <option value="manuscripts">Manuscripts</option>
+          <option value="newspapers">Newspapers</option>
+          <option value="film-and-videos">Film and Videos</option>
+          <option value="notated-music">Notated Music</option>
+          <option value="websites">Websites</option>
+        </select>
+        <button class="btn btn-info btn-block">Click Me</button>
       </form>
+    </div>
+  </div>
     <script src="./assets/script.js"></script>
-</main>
 </body>
+
 </html>
